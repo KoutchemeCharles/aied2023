@@ -1,0 +1,8 @@
+{
+    "name": "training",
+    "correction": ["dublin", "train"],
+    "buggy": ["dublin", "train"],
+    "tool_path": "TO_SPECIFY",
+    "save_dir": "TO_SPECIFY",
+    "remove_duplicates": false
+}

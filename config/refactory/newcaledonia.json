@@ -1,0 +1,8 @@
+{
+    "name": "newcaledonia_evaluation",
+    "correction": ["dublin", "train"],
+    "buggy": ["newcaledonia", "train"],
+    "tool_path": "TO_SPECIFY",
+    "save_dir": "TO_SPECIFY",
+    "remove_duplicates": true
+}

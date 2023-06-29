@@ -1,0 +1,109 @@
+func_code,assignment_id,func_name,description,test,correct,normalized,representative,user,academic_year,repair,submission_id,repair_correctness
+"def maximum(liste):
+    if len(liste) == 0:
+        res = None
+    else:
+        for i in range(len(liste)):
+            if liste[i] > res:
+                res = liste[i]
+    return res",maximum,maximum,Return the maximum element in a list of numbers.,"assert maximum([12, 1, 25, 7])==25 and maximum([-3, 7, 18, -12])==18 and maximum([-12, -1, -25, -7])==-1 and maximum([])==None and maximum([])==None",False,"Module(body=[FunctionDef(name='maximum', args=arguments(posonlyargs=[], args=[arg(arg='x_0')], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[If(test=Compare(left=Call(func=Name(id='len', ctx=Load()), args=[Name(id='x_0', ctx=Load())], keywords=[]), ops=[Eq()], comparators=[Constant(value=0)]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Constant(value=None))], orelse=[For(target=Name(id='x_2', ctx=Store()), iter=Call(func=Name(id='range', ctx=Load()), args=[Call(func=Name(id='len', ctx=Load()), args=[Name(id='x_0', ctx=Load())], keywords=[])], keywords=[]), body=[If(test=Compare(left=Subscript(value=Name(id='x_0', ctx=Load()), slice=Name(id='x_2', ctx=Load()), ctx=Load()), ops=[Gt()], comparators=[Name(id='x_1', ctx=Load())]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Subscript(value=Name(id='x_0', ctx=Load()), slice=Name(id='x_2', ctx=Load()), ctx=Load()))], orelse=[])], orelse=[])]), Return(value=Name(id='x_1', ctx=Load()))], decorator_list=[])], type_ignores=[])","def maximum(liste):
+    if len(liste) == 0:
+        res = None
+    else:
+        for i in range(len(liste)):
+            if liste[i] > res:
+                res = liste[i]
+    return res",,,"def maximum(liste):
+    if len(liste) == 0:
+        return None
+    else:
+        res = liste[0]
+        for i in range(1, len(liste)):
+            if liste[i] > res:
+                res = liste[i]
+        return res",739,True
+"def maximum(liste):
+    if liste == 0:
+        res = None
+    else:
+        for i in range(1, len(liste)):
+            if liste[i] > res:
+                res = res > liste[i]
+    return res",maximum,maximum,Return the maximum element in a list of numbers.,"assert maximum([12, 1, 25, 7])==25 and maximum([-3, 7, 18, -12])==18 and maximum([-12, -1, -25, -7])==-1 and maximum([])==None and maximum([])==None",False,"Module(body=[FunctionDef(name='maximum', args=arguments(posonlyargs=[], args=[arg(arg='x_0')], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[If(test=Compare(left=Name(id='x_0', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Constant(value=None))], orelse=[For(target=Name(id='x_2', ctx=Store()), iter=Call(func=Name(id='range', ctx=Load()), args=[Constant(value=1), Call(func=Name(id='len', ctx=Load()), args=[Name(id='x_0', ctx=Load())], keywords=[])], keywords=[]), body=[If(test=Compare(left=Subscript(value=Name(id='x_0', ctx=Load()), slice=Name(id='x_2', ctx=Load()), ctx=Load()), ops=[Gt()], comparators=[Name(id='x_1', ctx=Load())]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Compare(left=Name(id='x_1', ctx=Load()), ops=[Gt()], comparators=[Subscript(value=Name(id='x_0', ctx=Load()), slice=Name(id='x_2', ctx=Load()), ctx=Load())]))], orelse=[])], orelse=[])]), Return(value=Name(id='x_1', ctx=Load()))], decorator_list=[])], type_ignores=[])","def maximum(liste):
+    if liste == 0:
+        res = None
+    else:
+        for i in range(1, len(liste)):
+            if liste[i] > res:
+                res = res > liste[i]
+    return res",,,"def maximum(liste):
+    if len(liste) == 0:
+        return None
+    else:
+        res = liste[0]
+        for i in range(1, len(liste)):
+            if liste[i] > res:
+                res = liste[i]
+        return res",2174,True
+"def maximum(liste):
+    res = 0
+    for elem in liste:
+        if elem > res:
+            res = elem
+    return res",maximum,maximum,Return the maximum element in a list of numbers.,"assert maximum([12, 1, 25, 7])==25 and maximum([-3, 7, 18, -12])==18 and maximum([-12, -1, -25, -7])==-1 and maximum([])==None and maximum([])==None",False,"Module(body=[FunctionDef(name='maximum', args=arguments(posonlyargs=[], args=[arg(arg='x_0')], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Constant(value=0)), For(target=Name(id='x_2', ctx=Store()), iter=Name(id='x_0', ctx=Load()), body=[If(test=Compare(left=Name(id='x_2', ctx=Load()), ops=[Gt()], comparators=[Name(id='x_1', ctx=Load())]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Name(id='x_2', ctx=Load()))], orelse=[])], orelse=[]), Return(value=Name(id='x_1', ctx=Load()))], decorator_list=[])], type_ignores=[])","def maximum(liste):
+    res = 0
+    for elem in liste:
+        if elem > res:
+            res = elem
+    return res",,,"def maximum(a):
+    tmp = a[0]
+    for i in a:
+        if i > tmp:
+            tmp = i
+    return tmp",2461,False
+"def maximum(liste):
+    if liste == 0:
+        res = None
+    else:
+        for i in range(1, len(liste)):
+            if liste[i] > res:
+                res = res
+    return res",maximum,maximum,Return the maximum element in a list of numbers.,"assert maximum([12, 1, 25, 7])==25 and maximum([-3, 7, 18, -12])==18 and maximum([-12, -1, -25, -7])==-1 and maximum([])==None and maximum([])==None",False,"Module(body=[FunctionDef(name='maximum', args=arguments(posonlyargs=[], args=[arg(arg='x_0')], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[If(test=Compare(left=Name(id='x_0', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Constant(value=None))], orelse=[For(target=Name(id='x_2', ctx=Store()), iter=Call(func=Name(id='range', ctx=Load()), args=[Constant(value=1), Call(func=Name(id='len', ctx=Load()), args=[Name(id='x_0', ctx=Load())], keywords=[])], keywords=[]), body=[If(test=Compare(left=Subscript(value=Name(id='x_0', ctx=Load()), slice=Name(id='x_2', ctx=Load()), ctx=Load()), ops=[Gt()], comparators=[Name(id='x_1', ctx=Load())]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Name(id='x_1', ctx=Load()))], orelse=[])], orelse=[])]), Return(value=Name(id='x_1', ctx=Load()))], decorator_list=[])], type_ignores=[])","def maximum(liste):
+    if liste == 0:
+        res = None
+    else:
+        for i in range(1, len(liste)):
+            if liste[i] > res:
+                res = res
+    return res",,,"def maximum(liste):
+    if len(liste) == 0:
+        return None
+    else:
+        res = liste[0]
+        for i in range(1, len(liste)):
+            if liste[i] > res:
+                res = liste[i]
+        return res",2723,True
+"def maximum(liste):
+    if len(liste) == 0:
+        res = None
+    else:
+        for i in range(len(liste)):
+            if liste[i] > i:
+                res = liste[i]
+    return res",maximum,maximum,Return the maximum element in a list of numbers.,"assert maximum([12, 1, 25, 7])==25 and maximum([-3, 7, 18, -12])==18 and maximum([-12, -1, -25, -7])==-1 and maximum([])==None and maximum([])==None",False,"Module(body=[FunctionDef(name='maximum', args=arguments(posonlyargs=[], args=[arg(arg='x_0')], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[If(test=Compare(left=Call(func=Name(id='len', ctx=Load()), args=[Name(id='x_0', ctx=Load())], keywords=[]), ops=[Eq()], comparators=[Constant(value=0)]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Constant(value=None))], orelse=[For(target=Name(id='x_2', ctx=Store()), iter=Call(func=Name(id='range', ctx=Load()), args=[Call(func=Name(id='len', ctx=Load()), args=[Name(id='x_0', ctx=Load())], keywords=[])], keywords=[]), body=[If(test=Compare(left=Subscript(value=Name(id='x_0', ctx=Load()), slice=Name(id='x_2', ctx=Load()), ctx=Load()), ops=[Gt()], comparators=[Name(id='x_2', ctx=Load())]), body=[Assign(targets=[Name(id='x_1', ctx=Store())], value=Subscript(value=Name(id='x_0', ctx=Load()), slice=Name(id='x_2', ctx=Load()), ctx=Load()))], orelse=[])], orelse=[])]), Return(value=Name(id='x_1', ctx=Load()))], decorator_list=[])], type_ignores=[])","def maximum(liste):
+    if len(liste) == 0:
+        res = None
+    else:
+        for i in range(len(liste)):
+            if liste[i] > i:
+                res = liste[i]
+    return res",,,"def maximum(liste):
+    if len(liste) == 0:
+        return None
+    else:
+        res = liste[0]
+        for i in range(1, len(liste)):
+            if liste[i] > res:
+                res = liste[i]
+        return res",2908,True

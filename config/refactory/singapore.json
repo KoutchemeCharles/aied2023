@@ -1,0 +1,8 @@
+{
+    "name": "singapore_evaluation",
+    "correction": ["dublin", "train"],
+    "buggy": ["singapore", "train"],
+    "tool_path": "TO_SPECIFY",
+    "save_dir": "TO_SPECIFY",
+    "remove_duplicates": true
+}

@@ -1,0 +1,16 @@
+{
+    "name": "newcaledonia_evaluation",
+    "test_configuration": ["newcaledonia_data", "train"],
+    "save_dir": "TO_SPECIFY",
+    "agent": {
+        "name": "incoder",
+        "path": "facebook/incoder-1B"
+    },
+    "remove_duplicates": true,
+    "training": {
+        "search_best_genconfig": true
+    },
+    "budget": 50,
+    "seed": 32,
+    "heval_k": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+}

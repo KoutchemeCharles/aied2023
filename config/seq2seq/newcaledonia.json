@@ -1,0 +1,11 @@
+{
+    "name": "newcaledonia_evaluation",
+    "save_dir": "TO_SPECIFY",
+    "test_configuration": ["newcaledonia_data", "train"],
+    "agent": {
+       "name": "code_t5",
+       "path": "Salesforce/codet5-large-ntp-py"
+    },
+    "seed": 32,
+    "heval_k": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ }

@@ -1,0 +1,32 @@
+{
+    "name": "dublin_evaluation",
+    "correction": ["dublin", "train"],
+    "buggy": ["dublin", "test"],
+    "tool_path": "TO_SPECIFY",
+    "save_dir": "./data/",
+    "selected_assignments": [
+        "append2list",
+        "bsearch",
+        "count_letters",
+        "factorial",
+        "fibonacci_iter",
+        "fibonacci_recur",
+        "index_iter",
+        "index_recur",
+        "intersection",
+        "maximum",
+        "merge_lists",
+        "minimum",
+        "remove_zeros",
+        "reverse_iter",
+        "reverse_recur",
+        "search_iter",
+        "search_recur",
+        "selection_sort",
+        "sumup",
+        "swap_keys_values",
+        "swap_unique_keys_values",
+        "union"
+   ],
+    "remove_duplicates": true
+}
