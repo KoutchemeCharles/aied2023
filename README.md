@@ -2,16 +2,16 @@
 
 Repository for the experiments conducted in the papers
 [Training Language Models for Programming Feedback Using Automated Repair Tools](https://link.springer.com/chapter/10.1007/978-3-031-36272-9_79)
-and [Automated Program Repari using Generative Models for Code Infilling](https://link.springer.com/chapter/10.1007/978-3-031-36272-9_74).
+and [Automated Program Repair using Generative Models for Code Infilling](https://link.springer.com/chapter/10.1007/978-3-031-36272-9_74).
 
 ### Training Language Models for Programming Feedback Using Automated Repair Tools
 
-In this paper, we show a simple strategy to instantiate sequence-to-sequence model for
-repairing student programs. The strategy consists in finetuning existing open models, 
+In this paper, we show a simple strategy to instantiate a sequence-to-sequence model for
+repairing student programs. The strategy consists of finetuning existing open models, 
 such as those available on HuggingFace, using as ground truth the repairs found by
 Automated Repair Tools. We use CodeT5 as the sequence-to-sequence model. 
 
-### Automated Program Repari using Generative Models for Code Infilling
+### Automated Program Repair using Generative Models for Code Infilling
 
 In this paper, we experiment with using Code Generative Models augmented with infilling
 capabilities for the same task: repairing student programs. We conduct our experiments
